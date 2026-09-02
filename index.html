@@ -1,66 +1,955 @@
-!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>World of Warcraft Retro</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
-```
+    <title>Daemond♥</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
 
 </head>
 
+
 <body>
 
-```
-<!-- PANTALLA 1 -->
 
-<div class="pantalla-inicio" id="pantalla1">
+<!-- =========================================
+     MÚSICA DE FONDO
+========================================= -->
 
-    <img class="personaje" src="5.png">
+<audio id="musicaFondo" loop>
 
-    <button class="boton-comenzar" id="botonComenzar">
+    <source
+        src="mid.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =========================================
+     CONTROL DE VOLUMEN
+========================================= -->
+
+<div
+    class="control-volumen"
+    id="controlVolumen">
+
+    <button
+        id="botonVolumen"
+        type="button"
+        aria-label="Silenciar música">
+
+        🔊
+
+    </button>
+
+    <input
+        type="range"
+        id="volumenMusica"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.20"
+        aria-label="Volumen de música">
+
+</div>
+
+
+
+<!-- =========================================
+     PANTALLA 1
+========================================= -->
+
+<div
+    class="pantalla-inicio"
+    id="pantalla1">
+
+    <img
+        class="personaje"
+        src="5.png"
+        alt="Personaje">
+
+
+    <button
+        class="boton-comenzar"
+        id="botonComenzar"
+        type="button">
+
         COMENZAR
+
     </button>
 
 </div>
 
 
-<!-- PANTALLA 2 -->
 
-<div class="segunda-pantalla" id="pantalla2">
+<!-- =========================================
+     PANTALLA 2
+========================================= -->
 
-    <img class="personaje2" src="7.png">
+<div
+    class="segunda-pantalla"
+    id="pantalla2">
+
+
+    <img
+        class="personaje2"
+        src="7.png"
+        alt="Personaje">
+
 
     <div class="mensaje">
+
         Hola amor ❤️
+
     </div>
+
+
+    <button
+        class="boton-fecha"
+        id="botonFecha"
+        type="button"
+        aria-label="Continuar">
+    </button>
+
+
+    <button
+        class="flecha-movimiento"
+        id="flechaMovimiento"
+        type="button"
+        aria-label="Continuar">
+    </button>
+
 
 </div>
 
 
+
+<!-- =========================================
+     PANTALLA 3
+========================================= -->
+
+<div
+    class="tercera-pantalla"
+    id="pantalla3">
+
+
+    <img
+        class="avatar3"
+        src="8.png"
+        alt="Avatar">
+
+
+    <div class="texto-escoge">
+
+        Escoge
+
+    </div>
+
+
+
+    <!-- REGALO IZQUIERDO → PANTALLA 4 -->
+
+    <button
+        class="boton-regalo"
+        id="botonRegalo"
+        type="button"
+        aria-label="Abrir regalo">
+
+        <img
+            src="11.png"
+            alt="Regalo">
+
+    </button>
+
+
+
+    <!-- REGALO DERECHO → PANTALLA 5 -->
+
+    <button
+        class="boton-regalo-2"
+        id="botonRegalo2"
+        type="button"
+        aria-label="Abrir regalo">
+
+        <img
+            src="11.png"
+            alt="Regalo">
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =========================================
+     PANTALLA 4
+     CARTA
+========================================= -->
+
+<div
+    class="cuarta-pantalla"
+    id="pantalla4">
+
+
+    <div class="carta-cumpleanos">
+
+
+        <div class="titulo-carta">
+
+            Mor ❤️
+
+        </div>
+
+
+
+        <div class="texto-carta">
+
+
+            <p>
+
+                Hoy es un día muy especial porque celebra la vida de una de las personas que más quiero. Y aunque me encantaría poder estar a tu lado, abrazarte, mirarte a los ojos y decirte feliz cumpleaños en persona, esta vez la distancia nos pone un poquito de por medio.
+
+            </p>
+
+
+
+            <div class="frase-destacada">
+
+                Pero quiero que sepas algo, aunque no pueda estar físicamente contigo, mi corazón sí está ahí ❤️
+
+            </div>
+
+
+
+            <p>
+
+                Ojalá pudiera aparecer de repente frente a ti con un regalo, un abrazo enorme y una sonrisa, y ver tu cara cuando te diga cuánto significas para mí. Pero mientras ese momento llega, quiero regalarte estas palabras.
+
+            </p>
+
+
+
+            <p>
+
+                Gracias por haber llegado a mi vida y por convertirte en alguien tan importante para mí. Gracias por cada conversación, cada risa, cada momento compartido y también por esos pequeños detalles que quizá para ti parecen insignificantes, pero que para mí significan muchísimo.
+
+            </p>
+
+
+
+            <p>
+
+                A veces la distancia puede sentirse difícil. Hay días en los que quisiera simplemente acercarme a ti, abrazarte y quedarme ahí sin necesidad de decir nada. Pero incluso estando lejos, has conseguido hacerme sentir acompañada.
+
+            </p>
+
+
+
+            <p>
+
+                Y eso es algo que valoro muchísimo.
+
+            </p>
+
+
+
+            <p>
+
+                En este nuevo año de tu vida deseo que tengas muchísima felicidad, que cumplas tus sueños, que encuentres motivos para sonreír todos los días y que nunca olvides lo valioso que eres.
+
+            </p>
+
+
+
+            <p>
+
+                Y egoístamente también deseo que podamos seguir compartiendo muchos cumpleaños más, hasta que algún día ya no tengamos que felicitarnos desde una pantalla, sino que podamos estar juntos, abrazarnos y celebrar frente a frente ❤️
+
+            </p>
+
+
+
+            <p>
+
+                Quiero que cuando leas esto recuerdes que hay alguien a la distancia pensando en ti, sonriendo por ti y deseando con todo su corazón que siempre estés bien.
+
+            </p>
+
+
+
+            <p>
+
+                Hoy te abrazo con mis palabras, te acompaño con mi corazón y te celebro desde donde estoy.
+
+            </p>
+
+
+
+            <div class="frase-destacada">
+
+                Feliz cumpleaños mor 🎂🎉
+
+            </div>
+
+
+
+            <p>
+
+                Espero que este nuevo año te traiga todo aquello que deseas y muchas cosas bonitas que todavía ni siquiera imaginas.
+
+            </p>
+
+
+
+            <p>
+
+                Y espero poder seguir siendo parte de ellas.
+
+            </p>
+
+
+
+            <div class="firma-carta">
+
+                Te amo muchísimo ❤️
+
+                <br>
+                <br>
+
+                Lutarí 💌
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- FLECHA REGRESAR PANTALLA 4 -->
+
+    <button
+        class="flecha-movimiento flecha-regresar"
+        id="volverPantalla3Desde4"
+        type="button"
+        aria-label="Volver a pantalla 3">
+    </button>
+
+
+</div>
+
+
+
+<!-- =========================================
+     PANTALLA 5
+     VIDEO
+========================================= -->
+
+<div
+    class="quinta-pantalla"
+    id="pantalla5">
+
+
+    <video
+        class="video-fondo"
+        id="videoTaberna"
+        loop
+        playsinline>
+
+
+        <source
+            src="taberna.mp4"
+            type="video/mp4">
+
+
+    </video>
+
+
+
+    <!-- FLECHA REGRESAR PANTALLA 5 -->
+
+    <button
+        class="flecha-movimiento flecha-regresar"
+        id="volverPantalla3Desde5"
+        type="button"
+        aria-label="Volver a pantalla 3">
+    </button>
+
+
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
 <script>
 
-    const boton = document.getElementById("botonComenzar");
-    const pantalla1 = document.getElementById("pantalla1");
-    const pantalla2 = document.getElementById("pantalla2");
 
-    boton.addEventListener("click", function () {
+/* =========================================
+   OBTENER ELEMENTOS
+========================================= */
 
-        pantalla1.classList.add("ocultar");
 
-        setTimeout(function () {
-            pantalla2.classList.add("mostrar");
-        }, 500);
+const botonComenzar =
+    document.getElementById("botonComenzar");
 
-    });
+
+const botonFecha =
+    document.getElementById("botonFecha");
+
+
+const flechaMovimiento =
+    document.getElementById("flechaMovimiento");
+
+
+const botonRegalo =
+    document.getElementById("botonRegalo");
+
+
+const botonRegalo2 =
+    document.getElementById("botonRegalo2");
+
+
+
+/* FLECHAS DE REGRESO */
+
+
+const volverPantalla3Desde4 =
+    document.getElementById(
+        "volverPantalla3Desde4"
+    );
+
+
+const volverPantalla3Desde5 =
+    document.getElementById(
+        "volverPantalla3Desde5"
+    );
+
+
+
+/* PANTALLAS */
+
+
+const pantalla1 =
+    document.getElementById("pantalla1");
+
+
+const pantalla2 =
+    document.getElementById("pantalla2");
+
+
+const pantalla3 =
+    document.getElementById("pantalla3");
+
+
+const pantalla4 =
+    document.getElementById("pantalla4");
+
+
+const pantalla5 =
+    document.getElementById("pantalla5");
+
+
+
+/* VIDEO */
+
+
+const videoTaberna =
+    document.getElementById("videoTaberna");
+
+
+
+/* MÚSICA */
+
+
+const musicaFondo =
+    document.getElementById("musicaFondo");
+
+
+
+/* =========================================
+   CONTROL DE VOLUMEN
+========================================= */
+
+
+const botonVolumen =
+    document.getElementById("botonVolumen");
+
+
+const volumenMusica =
+    document.getElementById("volumenMusica");
+
+
+
+/* =========================================
+   VOLUMEN INICIAL
+========================================= */
+
+
+musicaFondo.volume = 0.20;
+
+volumenMusica.value = 0.20;
+
+
+
+/* =========================================
+   CAMBIAR VOLUMEN
+========================================= */
+
+
+volumenMusica.addEventListener(
+    "input",
+    function () {
+
+
+        const nuevoVolumen =
+            parseFloat(
+                volumenMusica.value
+            );
+
+
+        musicaFondo.volume =
+            nuevoVolumen;
+
+
+
+        /* CAMBIAR ICONO */
+
+
+        if (nuevoVolumen === 0) {
+
+            botonVolumen.textContent =
+                "🔇";
+
+        }
+
+        else if (nuevoVolumen < 0.5) {
+
+            botonVolumen.textContent =
+                "🔉";
+
+        }
+
+        else {
+
+            botonVolumen.textContent =
+                "🔊";
+
+        }
+
+
+    }
+);
+
+
+
+/* =========================================
+   SILENCIAR / ACTIVAR
+========================================= */
+
+
+botonVolumen.addEventListener(
+    "click",
+    function () {
+
+
+        /* SI TIENE VOLUMEN */
+
+        if (musicaFondo.volume > 0) {
+
+
+            /* GUARDAR VOLUMEN */
+
+            musicaFondo.dataset.volumenAnterior =
+                musicaFondo.volume;
+
+
+            /* SILENCIAR */
+
+            musicaFondo.volume = 0;
+
+            volumenMusica.value = 0;
+
+            botonVolumen.textContent =
+                "🔇";
+
+
+        }
+
+        else {
+
+
+            /* RECUPERAR VOLUMEN */
+
+            let volumenAnterior =
+                parseFloat(
+                    musicaFondo.dataset.volumenAnterior
+                );
+
+
+            /* SI NO EXISTE */
+
+            if (
+                isNaN(volumenAnterior) ||
+                volumenAnterior <= 0
+            ) {
+
+                volumenAnterior = 0.20;
+
+            }
+
+
+            musicaFondo.volume =
+                volumenAnterior;
+
+
+            volumenMusica.value =
+                volumenAnterior;
+
+
+
+            /* ACTUALIZAR ICONO */
+
+            if (volumenAnterior < 0.5) {
+
+                botonVolumen.textContent =
+                    "🔉";
+
+            }
+
+            else {
+
+                botonVolumen.textContent =
+                    "🔊";
+
+            }
+
+        }
+
+    }
+);
+
+
+
+/* =========================================
+   INTENTAR REPRODUCIR AL ABRIR
+========================================= */
+
+
+window.addEventListener(
+    "load",
+    function () {
+
+
+        musicaFondo.volume = 0.20;
+
+
+        musicaFondo.play().catch(
+            function () {
+
+
+                console.log(
+                    "El navegador espera una interacción para reproducir la música."
+                );
+
+
+            }
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 1 → PANTALLA 2
+========================================= */
+
+
+botonComenzar.addEventListener(
+    "click",
+    function () {
+
+
+        /* ASEGURAR QUE LA MÚSICA COMIENCE */
+
+        musicaFondo.play().catch(
+            function (error) {
+
+                console.log(
+                    "No se pudo reproducir la música:",
+                    error
+                );
+
+            }
+        );
+
+
+
+        /* OCULTAR PANTALLA 1 */
+
+        pantalla1.classList.add(
+            "ocultar"
+        );
+
+
+
+        /* MOSTRAR PANTALLA 2 */
+
+        setTimeout(
+            function () {
+
+                pantalla2.classList.add(
+                    "mostrar"
+                );
+
+            },
+            500
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 2 → PANTALLA 3
+========================================= */
+
+
+function irAPantalla3() {
+
+
+    pantalla2.classList.remove(
+        "mostrar"
+    );
+
+
+    pantalla3.classList.add(
+        "mostrar"
+    );
+
+
+}
+
+
+
+/* BOTÓN FECHA */
+
+
+botonFecha.addEventListener(
+    "click",
+    function () {
+
+        irAPantalla3();
+
+    }
+);
+
+
+
+/* FLECHA */
+
+
+flechaMovimiento.addEventListener(
+    "click",
+    function () {
+
+        irAPantalla3();
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 3 → PANTALLA 4
+   REGALO IZQUIERDO
+========================================= */
+
+
+botonRegalo.addEventListener(
+    "click",
+    function () {
+
+
+        pantalla3.classList.remove(
+            "mostrar"
+        );
+
+
+        pantalla4.classList.add(
+            "mostrar"
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 3 → PANTALLA 5
+   REGALO DERECHO
+========================================= */
+
+
+botonRegalo2.addEventListener(
+    "click",
+    function () {
+
+
+        /* PAUSAR MÚSICA */
+
+        musicaFondo.pause();
+
+
+
+        /* CAMBIAR PANTALLA */
+
+        pantalla3.classList.remove(
+            "mostrar"
+        );
+
+
+        pantalla5.classList.add(
+            "mostrar"
+        );
+
+
+
+        /* REINICIAR VIDEO */
+
+        videoTaberna.currentTime = 0;
+
+
+
+        /* ACTIVAR SONIDO */
+
+        videoTaberna.muted = false;
+
+
+
+        /* REPRODUCIR VIDEO */
+
+        videoTaberna.play().catch(
+            function (error) {
+
+                console.log(
+                    "El navegador bloqueó el sonido:",
+                    error
+                );
+
+            }
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 4 → PANTALLA 3
+========================================= */
+
+
+volverPantalla3Desde4.addEventListener(
+    "click",
+    function () {
+
+
+        pantalla4.classList.remove(
+            "mostrar"
+        );
+
+
+        pantalla3.classList.add(
+            "mostrar"
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   PANTALLA 5 → PANTALLA 3
+========================================= */
+
+
+volverPantalla3Desde5.addEventListener(
+    "click",
+    function () {
+
+
+        /* OCULTAR PANTALLA 5 */
+
+        pantalla5.classList.remove(
+            "mostrar"
+        );
+
+
+
+        /* MOSTRAR PANTALLA 3 */
+
+        pantalla3.classList.add(
+            "mostrar"
+        );
+
+
+
+        /* DETENER VIDEO */
+
+        videoTaberna.pause();
+
+
+
+        /* REINICIAR VIDEO */
+
+        videoTaberna.currentTime = 0;
+
+
+
+        /* VOLVER A REPRODUCIR MÚSICA */
+
+        musicaFondo.play().catch(
+            function (error) {
+
+                console.log(
+                    "No se pudo reanudar la música:",
+                    error
+                );
+
+            }
+        );
+
+
+    }
+);
+
 
 </script>
-```
+
 
 </body>
+
 </html>
+
