@@ -1,0 +1,66 @@
+!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>World of Warcraft Retro</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- PANTALLA 1 -->
+
+<div class="pantalla-inicio" id="pantalla1">
+
+    <img class="personaje" src="5.png">
+
+    <button class="boton-comenzar" id="botonComenzar">
+        COMENZAR
+    </button>
+
+</div>
+
+
+<!-- PANTALLA 2 -->
+
+<div class="segunda-pantalla" id="pantalla2">
+
+    <img class="personaje2" src="7.png">
+
+    <div class="mensaje">
+        Hola amor ❤️
+    </div>
+
+</div>
+
+
+<script>
+
+    const boton = document.getElementById("botonComenzar");
+    const pantalla1 = document.getElementById("pantalla1");
+    const pantalla2 = document.getElementById("pantalla2");
+
+    boton.addEventListener("click", function () {
+
+        pantalla1.classList.add("ocultar");
+
+        setTimeout(function () {
+            pantalla2.classList.add("mostrar");
+        }, 500);
+
+    });
+
+</script>
+```
+
+</body>
+</html>
